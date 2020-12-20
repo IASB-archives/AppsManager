@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="70dp"
+        android:background="#fff">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_height="match_parent"
+            android:layout_width="70dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:id="@+id/imageView">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageView"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif"
+            android:text="@string/app_name"
+            android:textColor="#000"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:id="@+id/appDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/app_name"
+            android:textColor="#000"
+            android:textSize="13sp"></TextView>
+
+        <Button
+            android:id="@+id/bttn"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/terminate_button"
+            android:text="STOP"
+            android:textAllCaps="true"></Button>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
